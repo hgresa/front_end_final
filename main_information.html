@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li>
+                    <a data-i18n="homepage" href="index.html">Homepage</a>
+                </li>
+                <li>
+                    <a data-i18n="main_information" href="main_information.html">Main Information</a>
+                </li>
+                <li>
+                    <a data-i18n="contact" href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a data-i18n="authorization" href="authorization.html">Authorization</a>
+                </li>
+                <li>
+                    <a data-i18n="registration" href="registration.html">Registration</a>
+                </li>
+                <li>
+                    <a data-i18n="about_us" href="about_us.html">About Us</a>
+                </li>
+                <li>
+                    <a data-i18n="movies" href="movies.html">Movies</a>
+                </li>
+                <li>
+                    <label data-i18n="language" for="language-switcher">Language</label>
+                    <select id="language-switcher" onchange="i18n.setLanguageCookie(this.value); i18n.translatePage()">
+                        <option></option>
+                        <option value="en">English</option>
+                        <option value="ge">Georgian</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p data-i18n="quentin_tarantino">Quentin Tarantino</p>
+    </div>
+</body>
+</html>
+<script src="js/localization.js"></script>

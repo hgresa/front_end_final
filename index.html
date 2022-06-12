@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/slider.css"/>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a data-i18n="homepage" href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a data-i18n="main_information" href="main_information.html">Main Information</a>
+            </li>
+            <li>
+                <a data-i18n="contact" href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a data-i18n="authorization" href="authorization.html">Authorization</a>
+            </li>
+            <li>
+                <a data-i18n="registration" href="registration.html">Registration</a>
+            </li>
+            <li>
+                <a data-i18n="about_us" href="about_us.html">About Us</a>
+            </li>
+            <li>
+                <a data-i18n="movies" href="movies.html">Movies</a>
+            </li>
+            <li>
+                <label data-i18n="language" for="language-switcher">Language</label>
+                <select id="language-switcher" onchange="i18n.setLanguageCookie(this.value); i18n.translatePage()">
+                    <option></option>
+                    <option value="en">English</option>
+                    <option value="ge">Georgian</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        <div class="slider">
+            <div id="slide-0" class="slide fade active">
+                <img src="https://images.unsplash.com/photo-1654314636376-94deb3d27342?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                     alt="moon #1" style="width:100%">
+                <div data-i18n="slide_0" class="text">Lorem Ipsum is simply dummy</div>
+            </div>
+            <div id="slide-1" class="slide fade">
+                <img src="https://images.unsplash.com/photo-1654313188737-dc65639ee929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                     alt="moon #2" style="width:100%">
+                <div data-i18n="slide_1" class="text">Lorem Ipsum has been the industry's</div>
+            </div>
+            <div id="slide-2" class="slide fade">
+                <img src="https://images.unsplash.com/photo-1654455103120-e33ac58ab56a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80"
+                     alt="snowy mountains" style="width:100%">
+                <div data-i18n="slide_2" class="text">but also the leap into electronic</div>
+            </div>
+            <div id="slide-3" class="slide fade">
+                <img src="https://images.unsplash.com/photo-1649529237119-03eac80e133d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                     alt="moon #1" style="width:100%">
+                <div data-i18n="slide_3" class="text">recently with desktop publishing</div>
+            </div>
+            <div id="slide-4" class="slide fade">
+                <img src="https://images.unsplash.com/photo-1608644139016-4b938587ff67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1054&q=80"
+                     alt="moon #1" style="width:100%">
+                <div data-i18n="slide_4" class="text">many variations of passages of Lorem Ipsum available</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/localization.js"></script>
+<script src="js/slider.js"></script>

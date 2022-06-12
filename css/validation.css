@@ -1,0 +1,9 @@
+.error {
+    display: none;
+    color: red;
+}
+
+.password-message {
+    display: block;
+    color: green;
+}
